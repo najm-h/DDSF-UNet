@@ -44,6 +44,11 @@ test_data/
 ```
 Filenames must match between raw and reference images for paired evaluation. 
 The LSUI train/test image-ID files and the selected RUIE-T78 image-ID list are provided in the `splits/` folder.
+
+## DDSF-UNet Architecture
+
+The overall architecture of DDSF-UNet is shown below. The framework consists of the main encoder-decoder architecture, the multi-residual module, the dual-domain fusion module, and the strengthen-operate-subtract feature reconstruction module.
+
 ![DDSF-UNet Architecture](DDSF_UNet_model.png)
 
 
@@ -63,6 +68,7 @@ python train.py \
     --epochs 200 \
     --batch_size 2 \
     --crop 256 \
+    --seed 42 \
     --save_dir ./checkpoints
 ```
 
@@ -100,11 +106,11 @@ The script will:
 
 ## Citation
 ```bibtex
-@article{DDSF-UNet2025,
-  title= {DDSF-UNet: A Dual-Domain Spatial–Frequency UNet for Underwater Image Enhancement},
-  author={Najmul Hassan, Munsif Ali, Abu Saleh Musa Miah, Jungpil Shin},
-  journal={XYZ},
-  year={2026},
+@article{hassan2026ddsf,
+  title={DDSF-UNet: Dual-Domain Spatial--Frequency Learning for Underwater Image Enhancement},
+  author={Hassan, Najmul and Ali, Munsif and Miah, Abu Saleh Musa and Canese, Simonepietro and Dong, Junyu and Shin, Jungpil},
+  journal={Scientific Reports},
+  year={2026}
 }
 ```
 
