@@ -42,10 +42,9 @@ test_data/
 ├── raw_test/       # degraded test images
 ├── ref_test/       # ground-truth reference images (optional for metrics)
 ```
-
-Filenames must match between raw and reference images for paired evaluation.
-Training
-
+Filenames must match between raw and reference images for paired evaluation. 
+The LSUI train/test image-ID files and the selected RUIE-T78 image-ID list are provided in the `splits/` folder.
+![DDSF-UNet Architecture](DDSF_UNet_model.png)
 
 
 ## Pretrained Checkpoints and Sample Enhanced Images
